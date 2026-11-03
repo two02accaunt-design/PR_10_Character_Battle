@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Герой проти монстра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <p class="label">ПРАКТИЧНА РОБОТА №10</p>
+        <h1>Герой проти монстра</h1>
+
+        <section class="fighters">
+            <article class="fighter">
+                <div class="avatar">🧙</div>
+                <h2 id="heroName">Герой</h2>
+                <p>Здоров'я: <span id="heroHP">100</span>/100</p>
+                <div class="health"><div id="heroBar" class="health-fill"></div></div>
+            </article>
+
+            <article class="fighter monster">
+                <div class="avatar">👹</div>
+                <h2 id="monsterName">Монстр</h2>
+                <p>Здоров'я: <span id="monsterHP">100</span>/100</p>
+                <div class="health"><div id="monsterBar" class="health-fill monster-fill"></div></div>
+            </article>
+        </section>
+
+        <section class="actions">
+            <button id="attackButton">⚔️ Атакувати</button>
+            <button id="healButton">❤️ Лікуватися</button>
+            <button id="restartButton" class="restart">Почати знову</button>
+        </section>
+
+        <h2>Історія бою</h2>
+        <div id="log" class="log">
+            <p>Бій починається! Натисни «Атакувати».</p>
+        </div>
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
